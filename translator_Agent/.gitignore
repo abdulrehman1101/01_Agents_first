@@ -1,0 +1,9 @@
+# Ignore .env file
+translator/.env
+
+# Ignore virtual environment
+translator/venv/
+
+# Ignore Python bytecode
+translator/__pycache__/
+translator/*.pyc
