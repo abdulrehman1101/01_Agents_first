@@ -4,7 +4,7 @@ import os
 from agents import Agent, Runner, OpenAIChatCompletionsModel, RunConfig
 
 load_dotenv()
-openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
+openrouter_api_key = os.getenv("OPENROUTER_API_KEY") 
 
 
 # Check if the API key is present; if not, raise an error
@@ -30,13 +30,16 @@ config = RunConfig(
 
 agent = Agent(
     name = "QuizMaster",
-    instructions = "Generate multiple-choice questions (MCQs) or quizzes from text or topics to help students study effectively.",
+    instructions = "You are a quizMaster. Generate multiple-choice questions (MCQs) or quizzes from text or topics to help students study effectively.",
 
 )
 
 response = Runner.run_sync( 
     agent,
-    input = "what is the capital of France?",
+    input = "what is capital of germany?",
     run_config = config
 )
 print(response)
+
+
+
