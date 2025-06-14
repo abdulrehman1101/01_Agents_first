@@ -1,0 +1,19 @@
+# 🌱 Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# 🔐 Secrets & tokens
+.env
+credentials.json
+token.json
+
+# 🧪 Logs or temporary files
+*.log
+*.sqlite3
+
+# 🧪 VSCode or editor settings (optional)
+.vscode/
+.idea/
+.DS_Store
